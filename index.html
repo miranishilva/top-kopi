@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Coffee | Kopinya orang Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="#"><img src="image/1232012.png" class="logo"></a>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Artikel</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                </ul>
+            </header>
+            <main>
+                <div class="content">
+                    <article>
+                        <h2>Tentang Top Coffee </h2>
+                        <p>Top Coffee menghadirkan sensasi baru dalam menikmati kopi, dengan campuran 2 jenis kopi terbaik dunia, Robusta dan Arabica. Perpaduan sempurna ini menghadirkan aroma kopi terbaik dengan karakter yang khas dan berbeda.</p>
+                        <a href="#">Pelajari Disini</a>
+                    </article>
+
+                    <aside>
+                        <img src="image/cappucino.png" class="topkopi">
+                    </aside>
+                </div>
+            </main>
+            <ul class="thumb">
+                <li><img src="image/img1.png" onclick="imgSlider('image/gula.png');changeCircleColor('#D7B19D')"><h3>Top Coffee Gula</h3></li>
+                <li><img src="image/img2.png" onclick="imgSlider('image/toraja.png');changeCircleColor('#865439')"><h3>Top Coffee Toraja</h3></li>
+                <li><img src="image/img3.png" onclick="imgSlider('image/mocca.png');changeCircleColor('#402218')"><h3>Top Coffee Mocca</h3></li>
+                <li><img src="image/img4.png" onclick="imgSlider('image/susu.png');changeCircleColor('#FFF5DA')"><h3>Top Coffee Kopi Susu</h3></li>
+                <li><img src="image/img5.png" onclick="imgSlider('image/cappucino.png');changeCircleColor('#D6D2C4')"><h3>Top Coffee Cappucino</h3></li>
+                <li><img src="image/img6.png" onclick="imgSlider('image/white.png');changeCircleColor('#7D5A50')"><h3>Coffee White Coffee</h3></li>
+            </ul>
+                      
+        </section>
+
+
+         <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.topkopi').src = anything;
+            }
+
+            function changeCircleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+
+            }
+         </script>
+
+    </body>
+</html>
